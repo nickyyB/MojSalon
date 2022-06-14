@@ -1,0 +1,474 @@
+.appointment-action-button{
+    font-size: 13px;
+    color: #fff;
+    background: #850049;
+    background: linear-gradient(-145deg, #850049 0%, #e30425 100%);
+    padding: 12px 30px;
+    display: inline-block;
+    border-radius: 5px;
+    border: none;
+    margin-right: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all .3s;
+}
+
+.appointment-action-button a {
+    color: #fff;
+}
+
+.appointment-action-button:hover {
+    opacity: 0.9;
+}
+
+.appointment-action-button-disabled{
+    font-size: 13px;
+    color: #fff;
+    background: #7a7a7a;
+    padding: 12px 30px;
+    display: inline-block;
+    border-radius: 5px;
+    border: none;
+    margin-right: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all .3s;
+}
+
+#review{
+    margin-left: -100px;
+  position: relative;
+  z-index: 5;
+  background-color: #fff;
+  margin-top: 40px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+  padding: 40px;
+}
+
+#review textarea{
+    width: 100%;
+  min-height: 140px;
+  max-height: 180px;
+  border-radius: 5px;
+  background-color: #f4f7fb;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  font-size: 13px;
+  font-weight: 500;
+  color: #7a7a7a;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+#review button{
+    float: right;
+  font-size: 13px;
+  color: #fff;
+  background: #850049;
+  background: linear-gradient(-145deg, #850049 0%, #e30425 100%);
+  padding: 12px 30px;
+  display: inline-block;
+  border-radius: 5px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all .3s;
+  transition: all .3s;
+  border: none;
+  outline: none;
+}
+
+#review button:hover{
+    opacity: 0.9;
+}
+
+#review input{
+    width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #f4f7fb;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  font-size: 13px;
+  font-weight: 500;
+  color: #7a7a7a;
+  padding: 0px 15px;
+  margin-bottom: 30px;
+  margin-right: 30px;
+}
+
+.white-button a:hover{
+    color:#850049;
+}
+
+/*
+ * #### Gauge Component
+ *
+ * The standard markup for the component is:
+ *
+ *      <div class="gauge">
+ *          <div class="gauge__container">
+ *              <div class="gauge__marker"></div>
+ *              <div class="gauge__background"></div>
+ *              <div class="gauge__center"></div>
+ *              <div class="gauge__data"></div>
+ *              <div class="gauge__needle"></div>
+ *          </div>
+ *          <div class="gauge__labels">
+ *              <span class="gauge__label--low">No</span>
+ *              <span class="gauge__label--spacer"></span>
+ *              <span class="gauge__label--high">Yes</span>
+ *          </div>
+ *      </div>
+ */
+
+/*
+ * First define all of the relevant rules that aren't dependent
+ * on the size of the gauge. We want to collect the size-depenent
+ * rules in one place to make it easier to adjust the size.
+ */
+
+ .gauge {
+    position: relative;
+}
+
+.gauge__container {
+	margin: 0;
+    top: 50%;
+	padding: 0;
+	position: absolute;
+	left: 50%;
+	overflow: hidden;
+	text-align: center;
+	-webkit-transform: translateX(-50%);
+	   -moz-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	     -o-transform: translateX(-50%);
+	        transform: translateX(-50%);
+}
+
+.gauge__background {
+	z-index: 0;
+	position: absolute;
+	background-color: #FFD180;
+	top: 0;
+	border-radius: 300px 300px 0 0;
+}
+
+.gauge__data {
+	z-index: 1;
+	position: absolute;
+	background-color: #FF9100;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 300px 300px 0 0;
+    -webkit-transform-origin: center bottom;
+       -moz-transform-origin: center bottom;
+        -ms-transform-origin: center bottom;
+         -o-transform-origin: center bottom;
+            transform-origin: center bottom;
+}
+
+.gauge__center {
+	z-index: 2;
+	position: absolute;
+	background: #fff;
+	margin-right: auto;
+	border-radius: 300px 300px 0 0;
+}
+
+.gauge__marker {
+    z-index: 3;
+    background-color: #fff;
+    position: absolute;
+    width: 1px;
+}
+
+.gauge__needle {
+    z-index: 4;
+    background-color: #E91E63;
+    height: 3px;
+    position: absolute;
+    -webkit-transform-origin: left center;
+       -moz-transform-origin: left center;
+        -ms-transform-origin: left center;
+         -o-transform-origin: left center;
+            transform-origin: left center;
+}
+
+.gauge__labels {
+    display: table;
+    margin: 0 auto;
+    position: relative;
+}
+
+.gauge__label--low {
+    display: table-cell;
+    text-align: center;
+}
+
+.gauge__label--spacer {
+    display: table-cell;
+}
+
+.gauge__label--high {
+    display: table-cell;
+    text-align: center;
+}
+
+/*
+ * Now define the rules that depend on the size of
+ * the gauge. We start with sizing for a small mobile
+ * device.
+ */
+
+.gauge { height: calc(120px + 3em); }
+.gauge__container { width: 240px; height: 120px; }
+.gauge__marker { height: 120px; left: 119.5px; }
+.gauge__background { width: 240px; height: 120px; }
+.gauge__center { width: 144px; height: 72px; top: 48px; margin-left: 48px; }
+.gauge__data { width: 240px; height: 120px; }
+.gauge__needle { left: 120px; top: 117px; width: 120px; }
+.gauge__labels { top: 120px; width: 240px; }
+.gauge__label--low { width: 48px; }
+.gauge__label--spacer { width: 144px; }
+.gauge__label--high { width: 48px; }
+
+/*
+ * Increase the gauge size slightly on larger viewports.
+ */
+
+ @media only screen and (min-width: 400px) {
+    .gauge { height: calc(150px + 3em); }
+    .gauge__container { width: 300px; height: 150px; }
+    .gauge__marker { height: 150px; left: 149.5px; }
+    .gauge__background { width: 300px; height: 150px; }
+    .gauge__center { width: 180px; height: 90px; top: 60px; margin-left: 60px; }
+    .gauge__data { width: 300px; height: 150px; }
+    .gauge__needle { left: 150px; top: 147px; width: 150px; }
+    .gauge__labels { top: 150px; width: 300px; }
+    .gauge__label--low { width: 60px; }
+    .gauge__label--spacer { width: 180px; }
+    .gauge__label--high { width: 60px; }
+}
+
+/*
+ * As an option, the `gauge--liveupdate` class can be added
+ * to the main gauge element. When this class is present,
+ * we add a transition that animates any changes to the gauge
+ * value. Currently, the app does not use this option because
+ * all the inputs that can change gauge values are present
+ * on tab panels that are different from the gauge itself.
+ * Therefore, users won't be able to see any gauge changes
+ * when they make input changes. The code is available, though,
+ * should this change.
+ */
+
+.gauge--liveupdate .gauge__data,
+.gauge--liveupdate .gauge__needle {
+    -webkit-transition: all 1s ease-in-out 0.5s;
+       -moz-transition: all 1s ease-in-out 0.5s;
+        -ms-transition: all 1s ease-in-out 0.5s;
+         -o-transition: all 1s ease-in-out 0.5s;
+            transition: all 1s ease-in-out 0.5s;
+}
+
+/*
+ * For a given gauge value, x, ranging from 0.0 to 1.0, set
+ * the `transform: rotate()` property according to the
+ * following equation: `-0.5 + 0.5x turns` The default
+ * properties below represent an x value of 0.
+ */
+
+.gauge__data {
+    -webkit-transform: rotate(-.50turn);
+       -moz-transform: rotate(-.50turn);
+        -ms-transform: rotate(-.50turn);
+         -o-transform: rotate(-.50turn);
+            transform: rotate(-.50turn);
+}
+.gauge__needle {
+    -webkit-transform: rotate(-.50turn);
+       -moz-transform: rotate(-.50turn);
+        -ms-transform: rotate(-.50turn);
+         -o-transform: rotate(-.50turn);
+            transform: rotate(-.50turn);
+}
+
+.pagination{
+    float:right;
+}
+
+.pagination li a{
+    font-size: 13px;
+    color: #fff;
+    background: #850049;
+    background: linear-gradient(-145deg, #850049 0%, #e30425 100%);
+    padding: 12px 30px;
+    display: inline-block;
+    border-radius: 5px;
+    border: none;
+    margin-right: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all .3s;
+    color: #fff
+}
+
+.pagination li:hover{
+    opacity: 0.9;
+}
+
+.no-appointments{
+    padding: 40px;
+  text-align: center;
+}
+
+.calendar,.appointment-details{
+    position: relative;
+    z-index: 2;
+    min-height: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+    padding: 40px;
+    margin-top: 40px;
+
+}
+
+.make-appointment h4 {
+    font-size: 20px;
+color: #111;
+margin-bottom: 25px;
+font-weight: 800;
+
+  }
+  
+.make-appointment h6 {
+    display: inline;
+    font-size: 20px;
+color: #111;
+margin-bottom: 25px;
+font-weight: 800;
+  }
+
+.week-picker{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.week-picker button{
+    color:#111;
+    opacity: .5;
+    background-color: #fff;
+    border: none;
+}
+
+.week-picker button:hover{
+    opacity: 1;
+}
+
+.day-picker{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    text-align: center;
+    padding: 5px;
+}
+
+.day-picker>div{
+    flex: 1 1 12%;
+    margin: 5px;
+    padding: 5px;
+}
+
+.day-numbers{
+}
+
+.hover{
+    cursor:pointer;
+
+    border-radius: 5px;
+    outline: solid 2px;
+    outline-color: #7a7a7a;
+}
+
+.time-picker{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    align-content: space-around;
+    text-align: center;
+    padding: 5px;
+}
+
+.time-picker>div{
+    cursor: pointer;
+    flex: 0 0 14.8%;
+    margin: 5px;
+    padding: 5px;
+}
+
+.clicked {
+    border-radius: 5px;
+    outline: solid 2px;
+    outline-color: #111;
+}
+
+.confirm-button{
+    float: right;
+  font-size: 13px;
+  color: #fff;
+  background: #850049;
+  background: linear-gradient(-145deg, #850049 0%, #e30425 100%);
+  padding: 12px 30px;
+  display: inline-block;
+  border-radius: 5px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all .3s;
+  transition: all .3s;
+  border: none;
+  outline: none;
+}
+
+.confirm-button:hover{
+    opacity: 0.9;
+}
+
+.confirm-button.disabled{
+    pointer-events: none;
+    font-size: 13px;
+    color: #fff;
+    background: #7a7a7a;
+    padding: 12px 30px;
+    display: inline-block;
+    border-radius: 5px;
+    border: none;
+    margin-right: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    /* transition: all .3s; */
+}
+
+.confirm-button.disabled:hover{
+    cursor:default;
+    opacity: 1;
+}
+
+.discount{
+    text-decoration: line-through solid #850049 2px;
+}
+
+#discounted-price{
+    color: #850049;
+}
+
+label{
+    font-size: 30px;
+}

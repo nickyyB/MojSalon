@@ -1,0 +1,1309 @@
+{
+  "id": "66a003df-7469-4e9d-a36f-85323f4525ad",
+  "version": "2.0",
+  "name": "MojSalon",
+  "url": "http://localhost:8080/Guest/searchSalons",
+  "tests": [{
+    "id": "bef3e2ad-8497-4b59-bcbe-4be070c7c08c",
+    "name": "guest_pregled_salon_u_pripremi",
+    "commands": [{
+      "id": "f3c48b63-6e82-49cf-b5c5-6ea10a0bb947",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/Guest/searchSalons",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "69e481a4-77bc-4f56-88b0-99f5bdbcc728",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "952x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "47eb4d8c-d2b7-4cb4-bc28-63dca75f142b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Rezerviši termin",
+      "targets": [
+        ["linkText=Rezerviši termin", "linkText"],
+        ["css=.active:nth-child(1) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Rezerviši termin')]", "xpath:link"],
+        ["xpath=//ul[@id='test']/li/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost:8080/Guest/salon/8']", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Rezerviši termin')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "faa51dd2-29e9-4484-99e6-4e087a86c770",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-12 > .row:nth-child(5)",
+      "targets": [
+        ["css=.col-lg-12 > .row:nth-child(5)", "css:finder"],
+        ["xpath=//section/div/div/div/div[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "76776bac-f9ed-48ef-97db-56929cff3830",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-lg-12 > .row:nth-child(5)",
+      "targets": [
+        ["css=.col-lg-12 > .row:nth-child(5)", "css:finder"],
+        ["xpath=//section/div/div/div/div[5]", "xpath:position"]
+      ],
+      "value": "Salon u pripremi."
+    }]
+  }, {
+    "id": "a5f370db-3c50-4b47-9819-5eec66c93d59",
+    "name": "guest_pregled_pretraga_salon_u_pripremi",
+    "commands": [{
+      "id": "d343ae4c-acb2-4128-a23a-8bac8e8b3a90",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/Guest/searchSalons",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d752f3b8-1fc1-4117-8417-996b5ec0c1bc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "952x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c996af91-37bb-4327-8db7-829a2868fb15",
+      "comment": "",
+      "command": "click",
+      "target": "id=search",
+      "targets": [
+        ["id=search", "id"],
+        ["name=search", "name"],
+        ["css=#search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//section[@id='top']/div/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1173aeae-b083-4932-83db-5adbfb5c7908",
+      "comment": "",
+      "command": "type",
+      "target": "id=search",
+      "targets": [
+        ["id=search", "id"],
+        ["name=search", "name"],
+        ["css=#search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//section[@id='top']/div/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Kalina"
+    }, {
+      "id": "dbed84de-b863-4e23-a55c-5205191e36e1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Rezerviši termin",
+      "targets": [
+        ["linkText=Rezerviši termin", "linkText"],
+        ["css=.text-button > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Rezerviši termin')]", "xpath:link"],
+        ["xpath=//ul[@id='test']/li/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost:8080/Guest/salon/8']", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Rezerviši termin')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9c775c3-05da-4e3a-a880-4f8bf7843b33",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-12 > .row:nth-child(5)",
+      "targets": [
+        ["css=.col-lg-12 > .row:nth-child(5)", "css:finder"],
+        ["xpath=//section/div/div/div/div[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f93dc74b-6ffc-499e-be25-1ca1d4328770",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-lg-12 > .row:nth-child(5)",
+      "targets": [
+        ["css=.col-lg-12 > .row:nth-child(5)", "css:finder"],
+        ["xpath=//section/div/div/div/div[5]", "xpath:position"]
+      ],
+      "value": "Salon u pripremi."
+    }]
+  }, {
+    "id": "1fb9ee00-e3b4-4706-8724-8ef5c798cfd6",
+    "name": "guest_pregled_salon_sa_uslugama",
+    "commands": [{
+      "id": "9440a543-c1ff-433d-bda8-0b9826a0f14a",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/Guest/searchSalons",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f4957d22-6f46-4480-b84e-03c5d1114a4e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "952x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b711a65f-3326-46a0-a7c6-5f49ce1d8b04",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Saloni",
+      "targets": [
+        ["linkText=Saloni", "linkText"],
+        ["css=#linkovi > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Saloni')]", "xpath:link"],
+        ["xpath=//ul[@id='linkovi']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/User/searchSalons')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Saloni')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c726c77-c9d3-427b-a73a-f84c1ba0b066",
+      "comment": "",
+      "command": "click",
+      "target": "css=.active:nth-child(3) a",
+      "targets": [
+        ["css=.active:nth-child(3) a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Rezerviši termin')])[3]", "xpath:link"],
+        ["xpath=//ul[@id='test']/li[3]/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost:8080/User/salon/11']", "xpath:href"],
+        ["xpath=//li[3]/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b36eef2d-2252-47a2-aa4d-6660b8a7a3e1",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.active:nth-child(1) button",
+      "targets": [
+        ["css=.active:nth-child(1) button", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'ZAKAŽI')]", "xpath:innerText"]
+      ],
+      "value": "ZAKAŽI"
+    }, {
+      "id": "e5ac3809-1ae8-40d1-8d28-40d8df12385e",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c6fff550-01cc-4709-b9ff-f67cb16b4022",
+    "name": "admin_pregled_nema_blokiranih",
+    "commands": [{
+      "id": "26e200d1-bce0-4128-975f-c1e2bf024ce6",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/Admin/blockedUsers",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e1c7f2e8-55c5-481f-9dd4-e5fbeb32359b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "952x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eb9770af-7ed7-402d-a1ba-c49272dfbd7f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter > .row",
+      "targets": [
+        ["css=.filter > .row", "css:finder"],
+        ["xpath=//section[@id='top']/div/div/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "629b64c6-a53f-4c09-be9e-c09f3a701256",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.filter > .row",
+      "targets": [
+        ["css=.filter > .row", "css:finder"],
+        ["xpath=//section[@id='top']/div/div/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div", "xpath:position"]
+      ],
+      "value": "Trenutno nema blokiranih korisnika."
+    }]
+  }, {
+    "id": "3db352ab-e3e4-434e-81a5-2e2c4b607ffd",
+    "name": "admin_pregled_ima_aktivnih",
+    "commands": [{
+      "id": "065dc8ff-644b-451f-9754-decce396d554",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/Admin",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "72895ceb-4667-4423-b22e-37785ca254f4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "952x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1192cf55-e5c3-483d-bae7-77432143e74e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.active:nth-child(1) button:nth-child(2)",
+      "targets": [
+        ["css=.active:nth-child(1) button:nth-child(2)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//section[@id='top']/div/div/div/div[2]/div/ul/li/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": "OBRIŠI KORISNIKA"
+    }, {
+      "id": "f4a7dc3d-ba25-4a9e-8e08-76f20eb026ec",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.active:nth-child(1) button:nth-child(3)",
+      "targets": [
+        ["css=.active:nth-child(1) button:nth-child(3)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//section[@id='top']/div/div/div/div[2]/div/ul/li/div/form/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": "BLOKIRAJ KORISNIKA"
+    }]
+  }, {
+    "id": "1cc32d05-8c1c-4b9a-9aca-5b22f85586ea",
+    "name": "admin_pregled_ima_blokiranih_salona",
+    "commands": [{
+      "id": "46e977d4-761f-4c65-b3e2-6f2a166ef913",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/Admin/activesalons",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a98ab31d-f8fa-4ba3-b16c-8a8c08bd9c72",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "952x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4377772c-1281-4571-a19a-e7b2a4b3525b",
+      "comment": "",
+      "command": "assertValue",
+      "target": "css=.active:nth-child(1) button:nth-child(3)",
+      "targets": [
+        ["css=.active:nth-child(1) button:nth-child(3)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//section[@id='top']/div/div/div/div[2]/div/ul/li/div/form/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dcc771fb-6772-417e-904e-eca3f47f497c",
+      "comment": "",
+      "command": "assertValue",
+      "target": "css=.active:nth-child(1) button:nth-child(2)",
+      "targets": [
+        ["css=.active:nth-child(1) button:nth-child(2)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//section[@id='top']/div/div/div/div[2]/div/ul/li/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4b1e9b6-8976-4227-afc4-b225b54f2f70",
+      "comment": "",
+      "command": "assertValue",
+      "target": "css=form:nth-child(1) > input",
+      "targets": [
+        ["css=form:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@type='submit']", "xpath:attributes"],
+        ["xpath=//section[@id='top']/div/div/div/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "47b3991d-8346-4d6c-a0de-8d74412ae89f",
+    "name": "admin_pregled_nema_blokiranih_salona",
+    "commands": [{
+      "id": "ac0f5076-61a3-43df-b865-a4234ff627a6",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/Admin/blockedsalons",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d9889c5f-3dd7-4ee1-ac1c-71cd2307ccc7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "952x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "edb53d55-4d37-46c0-a713-4f6e1520df36",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nacc",
+      "targets": [
+        ["css=.nacc", "css:finder"],
+        ["xpath=//section[@id='top']/div/div/div/div[2]/div/ul", "xpath:idRelative"],
+        ["xpath=//div/ul", "xpath:position"],
+        ["xpath=//ul[contains(.,'Trenutno nema blokiranih salona.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f9153d0-0238-4e20-87c2-ce99df9bc7b5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.nacc",
+      "targets": [
+        ["css=.nacc", "css:finder"],
+        ["xpath=//section[@id='top']/div/div/div/div[2]/div/ul", "xpath:idRelative"],
+        ["xpath=//div/ul", "xpath:position"],
+        ["xpath=//ul[contains(.,'Trenutno nema blokiranih salona.')]", "xpath:innerText"]
+      ],
+      "value": "Trenutno nema blokiranih salona."
+    }]
+  }, {
+    "id": "218f346c-1342-4682-9c40-a2f619b23b3c",
+    "name": "user_pregled_saloni",
+    "commands": [{
+      "id": "1bbe246a-271e-4f79-be97-6916a1fc7275",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/User/searchSalons",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "de90f64c-1d4f-4f76-b5da-78615f6cfde8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "952x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3b498915-200b-496e-b5c5-4c9120fd37f3",
+      "comment": "",
+      "command": "click",
+      "target": "css=h2:nth-child(2)",
+      "targets": [
+        ["css=h2:nth-child(2)", "css:finder"],
+        ["xpath=//section[@id='top']/div/div/div/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Pretraga salona')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "356754b3-cc1d-4830-910f-67602ad0ad66",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2:nth-child(2)",
+      "targets": [
+        ["css=h2:nth-child(2)", "css:finder"],
+        ["xpath=//section[@id='top']/div/div/div/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Pretraga salona')]", "xpath:innerText"]
+      ],
+      "value": "Pretraga salona"
+    }, {
+      "id": "fde4218a-40d0-417d-abff-8a69ade55179",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header-text > h4",
+      "targets": [
+        ["css=.header-text > h4", "css:finder"],
+        ["xpath=//section[@id='top']/div/div/div/div/h4", "xpath:idRelative"],
+        ["xpath=//h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Pronađite odgovarajući salon za sve Vaše potrebe!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f914acd-f638-4f42-adcd-f81586014249",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.header-text > h4",
+      "targets": [
+        ["css=.header-text > h4", "css:finder"],
+        ["xpath=//section[@id='top']/div/div/div/div/h4", "xpath:idRelative"],
+        ["xpath=//h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Pronađite odgovarajući salon za sve Vaše potrebe!')]", "xpath:innerText"]
+      ],
+      "value": "Pronađite odgovarajući salon za sve Vaše potrebe!"
+    }, {
+      "id": "9fece52e-5801-4fde-9177-15e7eda55211",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Rezerviši termin",
+      "targets": [
+        ["linkText=Rezerviši termin", "linkText"],
+        ["css=.active:nth-child(1) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Rezerviši termin')]", "xpath:link"],
+        ["xpath=//ul[@id='test']/li/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost:8080/User/salon/8']", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Rezerviši termin')]", "xpath:innerText"]
+      ],
+      "value": "Rezerviši termin"
+    }]
+  }, {
+    "id": "72e19d7d-54c7-46e3-8228-b9b8a5830d47",
+    "name": "user_pregled_salon_u_pripremi",
+    "commands": [{
+      "id": "2607d436-cf5c-4024-b4ca-80750f405332",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/User/searchSalons",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e9e2c4b8-3c85-48b2-933f-fe025e272f84",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "952x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6020f776-ff98-4901-8457-7a58281a4bb9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Rezerviši termin",
+      "targets": [
+        ["linkText=Rezerviši termin", "linkText"],
+        ["css=.active:nth-child(1) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Rezerviši termin')]", "xpath:link"],
+        ["xpath=//ul[@id='test']/li/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost:8080/User/salon/8']", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Rezerviši termin')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c883458b-b9f7-4aee-ab1c-063f1109fc42",
+      "comment": "",
+      "command": "click",
+      "target": "css=.our-team .col-lg-12",
+      "targets": [
+        ["css=.our-team .col-lg-12", "css:finder"],
+        ["xpath=//section/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "467b6a16-768c-4be0-a90f-bd420f9a41dc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.our-team .col-lg-12",
+      "targets": [
+        ["css=.our-team .col-lg-12", "css:finder"],
+        ["xpath=//section/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "98fd13fc-4bb1-4fd1-bd40-cc489e37d7ce",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.our-team .col-lg-12",
+      "targets": [
+        ["css=.our-team .col-lg-12", "css:finder"],
+        ["xpath=//section/div/div/div", "xpath:position"]
+      ],
+      "value": "Radno vreme:\\nPonedeljak: 09-17\\nUtorak: 09-17\\nSreda: 09-17\\nČetvrtak: 09-17\\nPetak: 09-17\\nSubota: Neradan dan\\nNedelja: Neradan dan\\nAdresa: Bulevar kralja Aleksandra 136\\n\\n\\n\\n\\nOcena: 0 /5\\nUsluge Dostupne U Kalina Beauty\\nSalon u pripremi."
+    }, {
+      "id": "a0b8f4cd-6115-4d59-b813-a2a53119bedc",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "06069e53-5a26-4f6e-9e9d-cfdd1407e3dc",
+      "comment": "",
+      "command": "click",
+      "target": "css=h5:nth-child(6)",
+      "targets": [
+        ["css=h5:nth-child(6)", "css:finder"],
+        ["xpath=//h5[2]", "xpath:position"],
+        ["xpath=//h5[contains(.,'Ocena: 0 /5')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "672b5c67-7b5f-4db4-ada4-1cdd1f19361e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h5:nth-child(6)",
+      "targets": [
+        ["css=h5:nth-child(6)", "css:finder"],
+        ["xpath=//h5[2]", "xpath:position"],
+        ["xpath=//h5[contains(.,'Ocena: 0 /5')]", "xpath:innerText"]
+      ],
+      "value": "Ocena: 0 /5"
+    }, {
+      "id": "46bd956a-428f-4bc1-8b09-0604bea8585e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-6 > h5:nth-child(1)",
+      "targets": [
+        ["css=.col-lg-6 > h5:nth-child(1)", "css:finder"],
+        ["xpath=//div[2]/h5", "xpath:position"],
+        ["xpath=//h5[contains(.,'Adresa: Bulevar kralja Aleksandra 136')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6af5288d-0268-412c-9cd5-bdda0a242608",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-lg-6 > h5:nth-child(1)",
+      "targets": [
+        ["css=.col-lg-6 > h5:nth-child(1)", "css:finder"],
+        ["xpath=//div[2]/h5", "xpath:position"],
+        ["xpath=//h5[contains(.,'Adresa: Bulevar kralja Aleksandra 136')]", "xpath:innerText"]
+      ],
+      "value": "Adresa: Bulevar kralja Aleksandra 136"
+    }]
+  }, {
+    "id": "2b43ad68-055a-4850-8c76-1fb63571608e",
+    "name": "user_pregled_salona_sa_uslugama",
+    "commands": [{
+      "id": "043dc6f2-9c71-4798-805f-12c4a901fda3",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/User/searchSalons",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8ea88a01-83d4-47de-a3e3-27f294768712",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "952x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7e8baa49-6cba-4234-8fd6-dfcbb135a693",
+      "comment": "",
+      "command": "click",
+      "target": "css=.active:nth-child(3) a",
+      "targets": [
+        ["css=.active:nth-child(3) a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Rezerviši termin')])[3]", "xpath:link"],
+        ["xpath=//ul[@id='test']/li[3]/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost:8080/User/salon/11']", "xpath:href"],
+        ["xpath=//li[3]/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c3d4125-836a-4867-841d-c448cbea27e3",
+      "comment": "",
+      "command": "assertValue",
+      "target": "css=.active:nth-child(1) button",
+      "targets": [
+        ["css=.active:nth-child(1) button", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'ZAKAŽI')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b45fa62-35f4-4316-884e-5ef6f1d50e54",
+      "comment": "",
+      "command": "click",
+      "target": "css=h5:nth-child(6)",
+      "targets": [
+        ["css=h5:nth-child(6)", "css:finder"],
+        ["xpath=//h5[2]", "xpath:position"],
+        ["xpath=//h5[contains(.,'Ocena: 0 /5')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "91edd7b6-5cbf-4b43-90b8-75a17d025dc2",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h5:nth-child(6)",
+      "targets": [
+        ["css=h5:nth-child(6)", "css:finder"],
+        ["xpath=//h5[2]", "xpath:position"],
+        ["xpath=//h5[contains(.,'Ocena: 0 /5')]", "xpath:innerText"]
+      ],
+      "value": "Ocena: 0 /5"
+    }, {
+      "id": "cd31d8ea-6d7b-4ccf-ae79-5ab7fb8f2a9b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.section-heading > h4",
+      "targets": [
+        ["css=.section-heading > h4", "css:finder"],
+        ["xpath=//h4", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f9f5086-26ca-4be1-9a76-0f6294815bac",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.section-heading > h4",
+      "targets": [
+        ["css=.section-heading > h4", "css:finder"],
+        ["xpath=//h4", "xpath:position"]
+      ],
+      "value": "Usluge Dostupne U Sensus Zemun"
+    }]
+  }, {
+    "id": "0a1f5528-fc20-4156-9524-64e75ec2a183",
+    "name": "salon_prazna_galerija",
+    "commands": [{
+      "id": "d068015f-761f-48d7-b85a-2f6558f5d707",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/salon/gallery",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a4e4a4f6-b269-4321-9523-735694e45bd1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "952x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "386cd079-0186-4a7d-84c0-50bc3f495de7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.our-team",
+      "targets": [
+        ["css=.our-team", "css:finder"],
+        ["xpath=//section", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "39387aa4-3386-419b-87f6-703c5651679b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-lg-12 > h3",
+      "targets": [
+        ["css=.col-lg-12 > h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Galerija je trenutno prazna.')]", "xpath:innerText"]
+      ],
+      "value": "Galerija je trenutno prazna."
+    }, {
+      "id": "ee521ebc-d67f-4436-a717-b393c2af37de",
+      "comment": "",
+      "command": "click",
+      "target": "css=label",
+      "targets": [
+        ["css=label", "css:finder"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Nova slika:')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "91b604d1-f545-4f01-83de-84d0b0cb32cc",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=label",
+      "targets": [
+        ["css=label", "css:finder"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Nova slika:')]", "xpath:innerText"]
+      ],
+      "value": "Nova slika:"
+    }, {
+      "id": "c6c96d50-013c-4a13-9a11-61d8ba9f32d8",
+      "comment": "",
+      "command": "assertValue",
+      "target": "css=button:nth-child(3)",
+      "targets": [
+        ["css=button:nth-child(3)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "a5875689-0476-4391-8189-5e4864fcc90d",
+    "name": "salon_popunjena_galerija",
+    "commands": [{
+      "id": "82051c03-6dbc-4b21-8ef7-5986b9f4a23a",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/salon/gallery",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f7769124-176b-4e13-9658-89b48813f50a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "952x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5c193b3f-0463-422d-b888-2e5cd69cf70a",
+      "comment": "",
+      "command": "assertValue",
+      "target": "css=.col-lg-6 > button",
+      "targets": [
+        ["css=.col-lg-6 > button", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5874408d-d10e-40e9-950d-4f91dfe59970",
+      "comment": "",
+      "command": "assertValue",
+      "target": "css=button:nth-child(3)",
+      "targets": [
+        ["css=button:nth-child(3)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "905996a0-3517-4f78-beb9-3fc911812850",
+      "comment": "",
+      "command": "assertValue",
+      "target": "name=image",
+      "targets": [
+        ["name=image", "name"],
+        ["css=form:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='image']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "83f9a8e3-dc95-4795-a823-53be438d0573",
+    "name": "salon_izmena_profila",
+    "commands": [{
+      "id": "bec18bb4-a9f0-4090-b445-186392327ae3",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/Salon/offer_page",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6b36202a-3801-4085-83b5-e4e1d59140cf",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "952x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0a8ae283-63f7-438d-8594-df0f5ba5efa9",
+      "comment": "",
+      "command": "click",
+      "target": "id=grupa1",
+      "targets": [
+        ["id=grupa1", "id"],
+        ["linkText=Dobro došao salon11", "linkText"],
+        ["css=#grupa1", "css:finder"],
+        ["xpath=//a[contains(text(),'Dobro došao salon11')]", "xpath:link"],
+        ["xpath=//a[@id='grupa1']", "xpath:attributes"],
+        ["xpath=//ul[@id='linkovi']/li[4]/a", "xpath:idRelative"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Dobro došao salon11')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "37d1356b-601e-4c50-903a-3cc8e0e1dcfa",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'Izmeni profil')]",
+      "targets": [
+        ["xpath=//a[contains(text(),'Izmeni profil')]", "xpath:link"],
+        ["xpath=//ul[@id='1']/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/salon/changeProfile')]", "xpath:href"],
+        ["xpath=//li[4]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd696602-4d2b-4674-ba4b-d27831347c41",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h4",
+      "targets": [
+        ["css=h4", "css:finder"],
+        ["xpath=//form[@id='contact']/div/div/div/h4", "xpath:idRelative"],
+        ["xpath=//h4", "xpath:position"]
+      ],
+      "value": "Izmenite Profil"
+    }]
+  }, {
+    "id": "9e83d46c-6478-40c4-8be7-5ead758184e0",
+    "name": "salon_uspesna_izmena_profila",
+    "commands": [{
+      "id": "f43da1f3-c161-43d2-9ea4-42db202a22b3",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/salon/changeProfile",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cc637999-308a-4b95-aaa4-06df8d398be8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "952x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a22a0a8a-01dd-46cd-a91c-d4c5e7a92e4a",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//form[@id='contact']/div/div[2]/fieldset/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e72675c-5246-44fb-b268-a27938fe0040",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//form[@id='contact']/div/div[2]/fieldset/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Alfaparf Studio Ada Malla"
+    }, {
+      "id": "8ea6291c-32d5-441b-9123-3c344ad12b8d",
+      "comment": "",
+      "command": "click",
+      "target": "id=form-submit",
+      "targets": [
+        ["id=form-submit", "id"],
+        ["css=#form-submit", "css:finder"],
+        ["xpath=//button[@id='form-submit']", "xpath:attributes"],
+        ["xpath=//form[@id='contact']/div/div[8]/fieldset/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "c4b64fd2-dd1d-4c07-90a0-2966f1b1fffc",
+    "name": "salon_neuspesna_izmena_previse_cifara",
+    "commands": [{
+      "id": "2a17baf5-374b-44f0-bd13-ab8bcf5cb330",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/salon/changeProfile",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "67046c2a-3c77-40d0-905e-ccb535e2e795",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "952x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "befac69f-2397-45a4-a01e-b8c8a27e8fa9",
+      "comment": "",
+      "command": "click",
+      "target": "id=phone",
+      "targets": [
+        ["id=phone", "id"],
+        ["name=phone", "name"],
+        ["css=#phone", "css:finder"],
+        ["xpath=//input[@id='phone']", "xpath:attributes"],
+        ["xpath=//form[@id='contact']/div/div[5]/fieldset/input", "xpath:idRelative"],
+        ["xpath=//div[5]/fieldset/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bbe8dc4e-e265-4d6d-8964-61a38599ae68",
+      "comment": "",
+      "command": "type",
+      "target": "id=phone",
+      "targets": [
+        ["id=phone", "id"],
+        ["name=phone", "name"],
+        ["css=#phone", "css:finder"],
+        ["xpath=//input[@id='phone']", "xpath:attributes"],
+        ["xpath=//form[@id='contact']/div/div[5]/fieldset/input", "xpath:idRelative"],
+        ["xpath=//div[5]/fieldset/input", "xpath:position"]
+      ],
+      "value": "06422236699999"
+    }, {
+      "id": "9181750d-f406-4589-9161-22512bcc6302",
+      "comment": "",
+      "command": "click",
+      "target": "id=form-submit",
+      "targets": [
+        ["id=form-submit", "id"],
+        ["css=#form-submit", "css:finder"],
+        ["xpath=//button[@id='form-submit']", "xpath:attributes"],
+        ["xpath=//form[@id='contact']/div/div[6]/fieldset/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "448a7846-670e-403f-b786-c13a9c1cb1e7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.alert > p",
+      "targets": [
+        ["css=.alert > p", "css:finder"],
+        ["xpath=//form[@id='contact']/div/div/div/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Broj telefona mora sadrzati izmedju 8 i 12 cifara')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ebb1c73-774c-424e-a363-a725d73f9d60",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.alert > p",
+      "targets": [
+        ["css=.alert > p", "css:finder"],
+        ["xpath=//form[@id='contact']/div/div/div/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Broj telefona mora sadrzati izmedju 8 i 12 cifara')]", "xpath:innerText"]
+      ],
+      "value": "Broj telefona mora sadrzati izmedju 8 i 12 cifara"
+    }]
+  }, {
+    "id": "0233b851-c645-4ff2-a8b7-de9062d94a2c",
+    "name": "salon_neuspesna_izmena_premalo_cifara",
+    "commands": [{
+      "id": "c1b92ae0-af33-4c4b-93a1-d6799ced0864",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/salon/changeProfile",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d7b44332-6961-4f9d-958b-f2ca052866c5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "952x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "092696e8-c63b-401f-ae9e-ebb3b30e311d",
+      "comment": "",
+      "command": "click",
+      "target": "id=phone",
+      "targets": [
+        ["id=phone", "id"],
+        ["name=phone", "name"],
+        ["css=#phone", "css:finder"],
+        ["xpath=//input[@id='phone']", "xpath:attributes"],
+        ["xpath=//form[@id='contact']/div/div[5]/fieldset/input", "xpath:idRelative"],
+        ["xpath=//div[5]/fieldset/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45e8946e-16fc-497e-af38-918de23342ab",
+      "comment": "",
+      "command": "type",
+      "target": "id=phone",
+      "targets": [
+        ["id=phone", "id"],
+        ["name=phone", "name"],
+        ["css=#phone", "css:finder"],
+        ["xpath=//input[@id='phone']", "xpath:attributes"],
+        ["xpath=//form[@id='contact']/div/div[5]/fieldset/input", "xpath:idRelative"],
+        ["xpath=//div[5]/fieldset/input", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "dae13f7a-6ab6-4fd4-addb-ffb71dd8ac09",
+      "comment": "",
+      "command": "click",
+      "target": "id=form-submit",
+      "targets": [
+        ["id=form-submit", "id"],
+        ["css=#form-submit", "css:finder"],
+        ["xpath=//button[@id='form-submit']", "xpath:attributes"],
+        ["xpath=//form[@id='contact']/div/div[6]/fieldset/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "989c4163-4d94-4a48-ac21-3f7bbdac377a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.alert > p",
+      "targets": [
+        ["css=.alert > p", "css:finder"],
+        ["xpath=//form[@id='contact']/div/div/div/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Broj telefona mora sadrzati izmedju 8 i 12 cifara')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "22e2edf9-373d-4ebc-9ce4-d0605160d1f4",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.alert > p",
+      "targets": [
+        ["css=.alert > p", "css:finder"],
+        ["xpath=//form[@id='contact']/div/div/div/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Broj telefona mora sadrzati izmedju 8 i 12 cifara')]", "xpath:innerText"]
+      ],
+      "value": "Broj telefona mora sadrzati izmedju 8 i 12 cifara"
+    }]
+  }, {
+    "id": "e4f88e28-091d-4bc7-a89d-d9ca65fba612",
+    "name": "salon_neuspesna_izmena_nema_adrese",
+    "commands": [{
+      "id": "dd15fee7-0717-4c6c-a120-fd128b4dd5ae",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/salon/changeProfile",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8252a14a-99c0-4719-b192-9d724b519aa9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "952x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b32b5f02-c0f7-441d-a435-53e9a04ec865",
+      "comment": "",
+      "command": "click",
+      "target": "id=address",
+      "targets": [
+        ["id=address", "id"],
+        ["name=address", "name"],
+        ["css=#address", "css:finder"],
+        ["xpath=//input[@id='address']", "xpath:attributes"],
+        ["xpath=//form[@id='contact']/div/div[3]/fieldset/input", "xpath:idRelative"],
+        ["xpath=//div[3]/fieldset/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cbf8af15-7ea2-464d-b123-2967b3a8e7b9",
+      "comment": "",
+      "command": "type",
+      "target": "id=address",
+      "targets": [
+        ["id=address", "id"],
+        ["name=address", "name"],
+        ["css=#address", "css:finder"],
+        ["xpath=//input[@id='address']", "xpath:attributes"],
+        ["xpath=//form[@id='contact']/div/div[3]/fieldset/input", "xpath:idRelative"],
+        ["xpath=//div[3]/fieldset/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "616ee3ef-f5e2-4142-9519-9da794cff04c",
+      "comment": "",
+      "command": "click",
+      "target": "id=munc",
+      "targets": [
+        ["id=munc", "id"],
+        ["name=munc", "name"],
+        ["css=#munc", "css:finder"],
+        ["xpath=//select[@id='munc']", "xpath:attributes"],
+        ["xpath=//form[@id='contact']/div/div[4]/fieldset/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd888283-c8fc-4cf7-ad06-9cccd017a489",
+      "comment": "",
+      "command": "click",
+      "target": "id=address",
+      "targets": [
+        ["id=address", "id"],
+        ["name=address", "name"],
+        ["css=#address", "css:finder"],
+        ["xpath=//input[@id='address']", "xpath:attributes"],
+        ["xpath=//form[@id='contact']/div/div[3]/fieldset/input", "xpath:idRelative"],
+        ["xpath=//div[3]/fieldset/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c65f32b-4da6-4d22-875c-0adbe08dcf3f",
+      "comment": "",
+      "command": "click",
+      "target": "id=address",
+      "targets": [
+        ["id=address", "id"],
+        ["name=address", "name"],
+        ["css=#address", "css:finder"],
+        ["xpath=//input[@id='address']", "xpath:attributes"],
+        ["xpath=//form[@id='contact']/div/div[3]/fieldset/input", "xpath:idRelative"],
+        ["xpath=//div[3]/fieldset/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7337c4c-6c22-49b6-a18b-be14e06e0902",
+      "comment": "",
+      "command": "type",
+      "target": "id=address",
+      "targets": [
+        ["id=address", "id"],
+        ["name=address", "name"],
+        ["css=#address", "css:finder"],
+        ["xpath=//input[@id='address']", "xpath:attributes"],
+        ["xpath=//form[@id='contact']/div/div[3]/fieldset/input", "xpath:idRelative"],
+        ["xpath=//div[3]/fieldset/input", "xpath:position"]
+      ],
+      "value": "              "
+    }, {
+      "id": "3349d67c-52bf-4fe1-8d79-82347ff51b1a",
+      "comment": "",
+      "command": "click",
+      "target": "id=form-submit",
+      "targets": [
+        ["id=form-submit", "id"],
+        ["css=#form-submit", "css:finder"],
+        ["xpath=//button[@id='form-submit']", "xpath:attributes"],
+        ["xpath=//form[@id='contact']/div/div[6]/fieldset/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "beb76116-1623-411f-9141-97dfaab0c94e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//form[@id='contact']/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "51db9521-bbbf-4706-8a43-2fae6d76389f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#contact .col-lg-12:nth-child(1)",
+      "targets": [
+        ["css=#contact .col-lg-12:nth-child(1)", "css:finder"],
+        ["xpath=//form[@id='contact']/div/div", "xpath:idRelative"],
+        ["xpath=//form/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a345a4d4-2bf3-4fc2-8dd3-ef6d14869177",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.alert > p",
+      "targets": [
+        ["css=.alert > p", "css:finder"],
+        ["xpath=//form[@id='contact']/div/div/div/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Adresa je obavezno polje')]", "xpath:innerText"]
+      ],
+      "value": "Adresa je obavezno polje"
+    }]
+  }, {
+    "id": "5e5ff94e-2735-4c89-86d9-a08bb2846bf7",
+    "name": "salon_neuspesna_izmena_nema_imena",
+    "commands": [{
+      "id": "2a3bfba9-64a1-4342-843f-16e262a26f7f",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/salon/changeProfile",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "827f26a8-7e51-4160-baa5-b47d07e72ba2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "952x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a57f388e-b5f2-4722-ab49-c6e29111a90e",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//form[@id='contact']/div/div[2]/fieldset/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd868f07-df61-4330-a721-0e1cabcc85cd",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//form[@id='contact']/div/div[2]/fieldset/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6d7bce6-544c-4529-a317-ab8c998fc1ef",
+      "comment": "",
+      "command": "click",
+      "target": "id=form-submit",
+      "targets": [
+        ["id=form-submit", "id"],
+        ["css=#form-submit", "css:finder"],
+        ["xpath=//button[@id='form-submit']", "xpath:attributes"],
+        ["xpath=//form[@id='contact']/div/div[6]/fieldset/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a12eae1-8899-432c-8e57-adf0826659a8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.alert > p",
+      "targets": [
+        ["css=.alert > p", "css:finder"],
+        ["xpath=//form[@id='contact']/div/div/div/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Naziv salona je obavezno polje')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "603100c1-af6e-48bf-8fa0-b5ebd2bf63ec",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.alert > p",
+      "targets": [
+        ["css=.alert > p", "css:finder"],
+        ["xpath=//form[@id='contact']/div/div/div/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Naziv salona je obavezno polje')]", "xpath:innerText"]
+      ],
+      "value": "Naziv salona je obavezno polje"
+    }]
+  }],
+  "suites": [{
+    "id": "9b08c684-e174-4833-8d8b-60a15d5a7dc4",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:8080/", "http://localhost:8080/Guest/searchSalons", "http://localhost:8080/Admin/blockedUsers", "http://localhost:8080/Admin", "http://localhost:8080/Admin/activesalons", "http://localhost:8080/Admin/blockedsalons", "http://localhost:8080/User/searchSalons", "http://localhost:8080/salon/gallery", "http://localhost:8080/Salon/offer_page", "http://localhost:8080/salon/changeProfile"],
+  "plugins": []
+}

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>PHP</ID>
+  <OriginalElement>D:/github/psi 2.1/Faza 5 - Implementacija/MojSalon/app/Controllers</OriginalElement>
+  <nodes>
+    <node x="216.0" y="628.0">\App\Controllers\Guest</node>
+    <node x="637.0" y="540.0">\App\Controllers\User</node>
+    <node x="463.0" y="496.0">\App\Controllers\Admin</node>
+    <node x="272.5" y="0.0">\CodeIgniter\Controller</node>
+    <node x="348.0" y="705.0">\App\Controllers\AppCont</node>
+    <node x="0.0" y="518.0">\App\Controllers\Salon</node>
+    <node x="272.5" y="325.0">\App\Controllers\BaseController</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="\App\Controllers\User" target="\App\Controllers\BaseController" relationship="GENERALIZATION">
+      <point x="0.0" y="-192.0" />
+      <point x="732.0" y="471.0" />
+      <point x="395.5" y="471.0" />
+      <point x="0.0" y="60.5" />
+    </edge>
+    <edge source="\App\Controllers\Guest" target="\App\Controllers\BaseController" relationship="GENERALIZATION">
+      <point x="0.0" y="-104.0" />
+      <point x="272.0" y="471.0" />
+      <point x="395.5" y="471.0" />
+      <point x="0.0" y="60.5" />
+    </edge>
+    <edge source="\App\Controllers\AppCont" target="\App\Controllers\BaseController" relationship="GENERALIZATION">
+      <point x="0.0" y="-27.0" />
+      <point x="0.0" y="60.5" />
+    </edge>
+    <edge source="\App\Controllers\Salon" target="\App\Controllers\BaseController" relationship="GENERALIZATION">
+      <point x="0.0" y="-214.0" />
+      <point x="98.0" y="471.0" />
+      <point x="395.5" y="471.0" />
+      <point x="0.0" y="60.5" />
+    </edge>
+    <edge source="\App\Controllers\BaseController" target="\CodeIgniter\Controller" relationship="GENERALIZATION">
+      <point x="0.0" y="-60.5" />
+      <point x="0.0" y="137.5" />
+    </edge>
+    <edge source="\App\Controllers\Admin" target="\App\Controllers\BaseController" relationship="GENERALIZATION">
+      <point x="0.0" y="-236.0" />
+      <point x="540.0" y="471.0" />
+      <point x="395.5" y="471.0" />
+      <point x="0.0" y="60.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="false" x="413.5000000000001" y="484.00000000000006" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
